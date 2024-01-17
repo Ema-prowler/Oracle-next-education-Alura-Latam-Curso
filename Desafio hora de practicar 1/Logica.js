@@ -7,6 +7,8 @@ let saldoDisponible = 1000;
 alert('¡Error! Completa todos los campos');
 let mensajeDeError = ('¡Error! Completa todos los campos');
 alert(mensajeDeError);
-console.log(nombre);
 let nombreDeUsuario = nombre = prompt('Digite su nombre de usuario');
-console.log(nombre);
+let edadDeUsuario = edad = prompt ('ingrese su edad');
+if (edad > 18) {
+alert('¡Puedes obtener tu licencia de conducir!');
+}else(alert('Usted es menor de edad no podra obtener la licencia de conducir'));
