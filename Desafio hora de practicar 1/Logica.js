@@ -7,3 +7,6 @@ let saldoDisponible = 1000;
 alert('¡Error! Completa todos los campos');
 let mensajeDeError = ('¡Error! Completa todos los campos');
 alert(mensajeDeError);
+console.log(nombre);
+let nombreDeUsuario = nombre = prompt('Digite su nombre de usuario');
+console.log(nombre);
