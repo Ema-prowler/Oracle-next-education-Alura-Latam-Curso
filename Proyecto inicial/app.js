@@ -11,3 +11,9 @@ if (numeroUsuario == numeroSecreto) {
 //El valor va del lado derecho (>)
 alert('Hola Mundo');
 let numeroUsuario = prompt("Me puedes decir un numero por favor :");
+let numeroSecreto = 6;
+onsole.log(numeroUsuario);
+
+if (numeroUsuario == numeroSecreto) {
+    alert('adivinaste el numero');
+}
