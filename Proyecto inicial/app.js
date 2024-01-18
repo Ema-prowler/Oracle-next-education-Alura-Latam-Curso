@@ -14,5 +14,5 @@ if (numeroUsuario == numeroSecreto) {
     alert(`adivinaste, el numero es: ${numeroUsuario}`);
 }
 else{
-    alert('Lo siento no es el numero secreto' + 'el numero que elegiste fue' + numeroSecreto, 'pero elegiste: ' + numeroUsuario)
+    alert('Lo siento no es el numero secreto' + 'el numero que elegiste fue' + numeroUsuario, 'pero el numero secreto es: ' + numeroSecreto)
 };
