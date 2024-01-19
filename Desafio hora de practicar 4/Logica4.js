@@ -1,0 +1,13 @@
+console.log("bienvenido al programa");
+let nombre = "Emanuel";
+console.log("hola " + nombre);
+alert("Hola " + nombre);
+let respuesta = prompt("Cual es tu lenguaje de programacion favorito ?: ");
+console.log(respuesta);
+let valor1 = 5;
+let valor2 = 10;
+let resultado = 0;
+resultado = valor1 + valor2;
+console.log("La suma de: " + valor1, "y " + valor2, "Es: " + resultado);
+resultado = valor1 - valor2;
+console.log("La resta de: " + valor1, "y " + valor2, "Es: " + resultado);
