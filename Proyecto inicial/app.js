@@ -8,7 +8,8 @@ alert("Bienvenidos al juego del número secreto");
 let numeroSecreto = 6;
 let numeroUsuario = 0;
 let intentos = 1;
-let palabraVeces = "vez";
+//let palabraVeces = "vez";
+let maximosIntentos = 3;
 
 while (numeroUsuario != numeroSecreto) {
   numeroUsuario = prompt("indique un numero del entre el 1 y 10");
@@ -18,7 +19,9 @@ while (numeroUsuario != numeroSecreto) {
   if (numeroUsuario == numeroSecreto) {
     //                                        ┌--------------------------------------------------┐
     alert(
-      `adivinaste, el numero es: ${numeroUsuario} lo hiciste en ${intentos} ${palabraVeces}`
+      `adivinaste, el numero es: ${numeroUsuario} lo hiciste en ${intentos} ${
+        intentos == 1 ? "vez" : "veces"
+      }`
     ); //Usando TEMPLATE STRING
   } else {
     if (numeroUsuario > numeroSecreto) {
@@ -27,7 +30,14 @@ while (numeroUsuario != numeroSecreto) {
       alert("el numero secreto es mayor");
     }
     //incrementamos el contador cuando no acierta
-    intentos = intentos + 1;
-    palabraVeces = "veces";
+    //intentos = intentos + 1;
+    //intentos += 1;
+    intentos++;
+
+    // palabraVeces = "veces";
+    if (intentos > maximosIntentos) {
+      alert(`Supero el maximo de intentos ${maximosIntentos}`);
+      break;
+    }
   }
 }
