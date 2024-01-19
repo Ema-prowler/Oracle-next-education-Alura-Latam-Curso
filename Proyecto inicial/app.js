@@ -5,16 +5,18 @@
 //let mensajeDeBienvenida = 'Bienvenido a la aplicación';
 alert("Bienvenidos al juego del número secreto");
 
-let numeroSecreto = 6;
+let numeroSecreto = Math.floor(Math.random() * 10) + 1;
 let numeroUsuario = 0;
 let intentos = 1;
 //let palabraVeces = "vez";
 let maximosIntentos = 3;
 
-while (numeroUsuario != numeroSecreto) {
-  numeroUsuario = prompt("indique un numero del entre el 1 y 10");
+console.log(numeroSecreto);
 
-  console.log(numeroUsuario);
+while (numeroUsuario != numeroSecreto) {
+  numeroUsuario = parseInt(prompt("indique un numero del entre el 1 y 10"));
+
+  console.log(typeof numeroUsuario);
 
   if (numeroUsuario == numeroSecreto) {
     //                                        ┌--------------------------------------------------┐
